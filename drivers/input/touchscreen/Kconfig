@@ -1015,10 +1015,4 @@ config TOUCHSCREEN_MAX1187X
           to your system. max11871 conforms to the Maxim Touch Protocol
           (MTP) defined by Maxim.
 
-          If unsure, say N.
-config TOUCHSCREEN_SYNAPTICS_SWEEP2WAKE
-        tristate "Sweep2Wake for SYNAPTICS_3k based touchscreens"
-        depends on TOUCHSCREEN_SYNAPTICS_3K
-        default n
-
 endif

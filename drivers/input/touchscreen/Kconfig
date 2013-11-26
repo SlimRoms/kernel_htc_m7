@@ -1015,4 +1015,12 @@ config TOUCHSCREEN_MAX1187X
           to your system. max11871 conforms to the Maxim Touch Protocol
           (MTP) defined by Maxim.
 
+          If unsure, say N.
+
+config TOUCHSCREEN_HIMAX
+        tristate "HIMAX HM852xD serious i2c touchscreen"
+		depends on I2C
+		help
+		This enables support for HIMAX HM852xD over I2C based touchscreens.
+
 endif
